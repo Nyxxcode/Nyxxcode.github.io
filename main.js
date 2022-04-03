@@ -3,8 +3,8 @@ var stopBtn = document.getElementById('stop')
 var start2 = document.getElementById('start2')
 num = 1;
 
-document.getElementById('reset').addEventListener('click' ,function(){
-location.reload()
+document.getElementById('reset').addEventListener('click', function () {
+    location.reload()
 })
 
 window.AudioContext = window.AudioContext || window.webkitAudioContext;
@@ -14,14 +14,14 @@ var nextNotetime = audioContext.currentTime;
 
 function repeat() {
 
-    if(num<88) {
-    var timeOut = setTimeout(()=>{
-        sound((notes[num]), time[num])
-        moveBars(notes[num])
-        moveWords(num)
-            num = num+1  
+    if (num < 88) {
+        var timeOut = setTimeout(() => {
+            sound((notes[num]), time[num])
+            moveBars(notes[num])
+            moveWords(num)
+            num = num + 1
             repeat()
-            },time[num-1])
+        }, time[num - 1])
     }
 }
 function sound(frequency, time) {
@@ -32,34 +32,35 @@ function sound(frequency, time) {
     oscillator.frequency.value = frequency;
     g.connect(audioContext.destination);
     oscillator.start()
-    
-    var timeout = setTimeout(()=>{
+
+    var timeout = setTimeout(() => {
         g.gain.setTargetAtTime(0, audioContext.currentTime, 0.003);
-    },time)
-    
-  };
+    }, time)
 
-  startBtn.addEventListener('click', function() {
+};
+
+startBtn.addEventListener('click', function () {
     repeat();
-//    var time = setTimeout(()=>{//BACKGROUND
-//     background()
-// },2000)
-  }, false)
+    //    var time = setTimeout(()=>{//BACKGROUND
+    //     background()
+    // },2000)
+}, false)
 
 
-  function moveBars(baseFreq){
+function moveBars(baseFreq) {
     document.getElementById('freq').innerHTML = baseFreq + 'Hz'
 
-    for (i=1; i<30; i++){
-        barRef= ('bar'+i)
+    for (i = 1; i < 30; i++) {
+        barRef = ('bar' + i)
 
-if(baseFreq==0){
-    document.getElementById(barRef).style.height = (200 + 'px')
-    document.getElementById(barRef).style.transform = ('translateY(' + -200 + 'px)')
-}else{
-    document.getElementById(barRef).style.height = ((baseFreq*multipliers[i])+ 'px') //----
-    document.getElementById(barRef).style.transform = ('translateY(' + -1*(baseFreq*multipliers[i])+ 'px)' )
-}}
+        if (baseFreq == 0) {
+            document.getElementById(barRef).style.height = (200 + 'px')
+            document.getElementById(barRef).style.transform = ('translateY(' + -200 + 'px)')
+        } else {
+            document.getElementById(barRef).style.height = ((baseFreq * multipliers[i]) + 'px') //----
+            document.getElementById(barRef).style.transform = ('translateY(' + -1 * (baseFreq * multipliers[i]) + 'px)')
+        }
+    }
 }
 
 
@@ -135,15 +136,15 @@ var b5 = 493.9;
 var c6 = 554.4; //sharp
 
 var wn = 1558.44156;
-var dwn = wn*1.5;
-var hn = wn/2;
-var dhn = hn*1.5
-var qn = wn/4;
-var dqn = qn*1.5;
-var en = wn/8;
-var den = en*8.5;
-var sn = wn/16;
-var dsn = sn*1.5;
+var dwn = wn * 1.5;
+var hn = wn / 2;
+var dhn = hn * 1.5
+var qn = wn / 4;
+var dqn = qn * 1.5;
+var en = wn / 8;
+var den = en * 8.5;
+var sn = wn / 16;
+var dsn = sn * 1.5;
 
 
 
@@ -159,15 +160,15 @@ var notes = {
     4: a5s,
     5: pause,
     6: f4,
-    7: d5,  
+    7: d5,
     8: d5,
     9: d5,
-    10:d5,
+    10: d5,
     11: b4,
     12: b4,
     13: b4,
     14: d5,
-    15: d5, 
+    15: d5,
     16: d5,
     17: d5,
     18: b4,
@@ -300,8 +301,8 @@ var time = {
     54: qn,
     55: en,
     56: en,
-    57:dqn,
-    58:dqn,
+    57: dqn,
+    58: dqn,
     59: hn,
     60: hn,
     61: hn,
@@ -328,7 +329,7 @@ var time = {
     82: en,
     83: en,
     84: en,
-    85: en, 
+    85: en,
     86: en,
     87: en,
 }
@@ -337,34 +338,34 @@ var time = {
 var element = document.getElementById("words");
 num2 = 0
 
-function moveWords(pos){
-  
-    if(pos<2) {
-        element.innerHTML ='Enemy by Imagine Dragons'
-      
-    }
-    else if (pos<6){
-element.innerHTML ='From Arcane'
+function moveWords(pos) {
+
+    if (pos < 2) {
+        element.innerHTML = 'Enemy by Imagine Dragons'
 
     }
-    else{
-    element.innerHTML = lyrics[num2]
-num2 = num2 + 1
+    else if (pos < 6) {
+        element.innerHTML = 'From Arcane'
+
+    }
+    else {
+        element.innerHTML = lyrics[num2]
+        num2 = num2 + 1
     }
 };
 
 
-var lyrics = ["I" ,"wake up" ,"to" ,"the" ,'sounds' ,"of", 'the', "silence","silence", 'that', "allows","allows",
-    "For", "my", "mind" ,"to","run", "around","around", "with", "my", "ear", "up", "to", "the","ground",
-    "I'm", "searching","searching", "to", "behold","behold", "the", 'stories','stories', 'that', 'are', "told",'When', "my", "back", "is", 
-    "to", 'the', "world", "that", "was", "smiling","smiling", "when", "I", "turned.", //good
-    'They', "tell","you", "you're", "the", "greatest","greatest",
-    "But", "once","you", "turn", "they", "hate","hate", "us",//good
-    "Oh,","Oh,", "the", "misery","misery","misery",
-    "Everybody", "Everybody","Everybody", "Everybody","wants", "to", 'be', "my", "enemy",
+var lyrics = ["I", "wake up", "to", "the", 'sounds', "of", 'the', "silence", "silence", 'that', "allows", "allows",
+    "For", "my", "mind", "to", "run", "around", "around", "with", "my", "ear", "up", "to", "the", "ground",
+    "I'm", "searching", "searching", "to", "behold", "behold", "the", 'stories', 'stories', 'that', 'are', "told", 'When', "my", "back", "is",
+    "to", 'the', "world", "that", "was", "smiling", "smiling", "when", "I", "turned.", //good
+    'They', "tell", "you", "you're", "the", "greatest", "greatest",
+    "But", "once", "you", "turn", "they", "hate", "hate", "us",//good
+    "Oh,", "Oh,", "the", "misery", "misery", "misery",
+    "Everybody", "Everybody", "Everybody", "Everybody", "wants", "to", 'be', "my", "enemy",
     "Spare", "the", "sympathy",
     "Everybody", "wants", "to", 'be', "my", "enemy",]
-    
+
 
 
 
