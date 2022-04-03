@@ -1,0 +1,333 @@
+#start{
+   width: 300px;
+   height: 100px;
+   margin: 50px;
+   border: 4px solid #7d12ff;
+   background-color: hsl(227, 10%, 10%);
+   color: #7d12ff;
+   font: inherit;
+   font-size: 80px;
+}
+#reset{
+   position: absolute;
+   right: 10px;
+   top: 10px;
+   border: 2px solid #7d12ff;
+   background-color: hsl(227, 10%, 10%);
+   color: #7d12ff;
+   font: inherit;
+}
+#container{
+    width: 100%;
+    height:750px;
+    margin: auto;
+    
+    vertical-align: middle;
+
+}
+body{
+   /*background-color: #28282B ;*/
+   background: hsl(227, 10%, 10%);
+   text-align: center;
+}
+#freq{
+   font-size: 25px;
+   color: #7d12ff;
+   position: relative;
+   top: -200px;
+   left: -450px;
+}
+
+#bar25{
+   width: 20px; 
+   height: 200px;
+   background-color:#200589;
+   margin: 100px;
+   position: absolute;
+   left: -100px;
+   top: 700px;
+   transition: all 0.5s;
+}#bar26{
+   width: 20px; 
+   height: 200px;
+   background-color:#7d12ff;
+   margin: 100px;
+   position: absolute;
+   left: -50px;
+   top: 700px;
+   transition: all 0.5s;
+}#bar27{
+   width: 20px; 
+   height: 200px;
+   background-color:#200589;
+   margin: 100px;
+   position: absolute;
+   left: 0px;
+   top: 700px;
+   transition: all 0.5s;
+}#bar28{
+   width: 20px; 
+   height: 200px;
+   background-color:#7d12ff;
+   margin: 100px;
+   position: absolute;
+   left: 50px;
+   top: 700px;
+   transition: all 0.5s;
+}
+#bar1{
+   width: 20px; 
+   height: 200px;
+   background-color:#200589;
+   margin: 100px;
+   position: absolute;
+   left: 100px;
+   top: 700px;
+   transition: all 0.5s;
+  
+} #bar2{
+   width: 20px; 
+   height: 200px;
+   background-color: #7d12ff;
+   margin: 100px;
+   position: absolute;
+   left: 150px;
+   top: 700px;
+   transition: all 0.5s;
+  
+} #bar3{
+   width: 20px; 
+   height: 200px;
+   background-color: #200589;
+   margin: 100px;
+   position: absolute;
+   left: 200px;
+   top: 700px;
+   transition: all 0.5s;
+  
+} #bar4{
+   width: 20px; 
+   height: 200px;
+   background-color: #7d12ff;
+   margin: 100px;
+   position: absolute;
+   left: 250px;
+   top: 700px;
+   transition: all 0.5s;
+  
+} #bar5{
+   width: 20px; 
+   height: 200px;
+   background-color:#200589;
+   margin: 100px;
+   position: absolute;
+   left: 300px;
+   top: 700px;
+   transition: all 0.5s;
+  
+}  #bar6{
+   width: 20px; 
+   height: 200px;
+   background-color:#7d12ff;
+   margin: 100px;
+   position: absolute;
+   left: 350px;
+   top: 700px;
+   transition: all 0.5s;
+  
+}  #bar7{
+   width: 20px; 
+   height: 200px;
+   background-color:#200589;
+   margin: 100px;
+   position: absolute;
+   left: 400px;
+   top: 700px;
+   transition: all 0.5s;
+}  #bar8{
+   width: 20px; 
+   height: 200px;
+   background-color:#7d12ff;
+   margin: 100px;
+   position: absolute;
+   left: 450px;
+   top: 700px;
+   transition: all 0.5s;
+  
+}  #bar9{
+   width: 20px; 
+   height: 200px;
+   background-color:#200589;
+   margin: 100px;
+   position: absolute;
+   left: 500px;
+   top: 700px;
+   transition: all 0.5s;
+  
+}  #bar10{
+   width: 20px; 
+   height: 200px;
+   background-color:#7d12ff;
+   margin: 100px;
+   position: absolute;
+   left: 550px;
+   top: 700px;
+   transition: all 0.5s;
+}  
+   #bar11{
+   width: 20px; 
+   height: 200px;
+   background-color:#200589;
+   margin: 100px;
+   position: absolute;
+   left: 600px;
+   top: 700px;
+   transition: all 0.5s;
+} 
+ #bar12{
+   width: 20px; 
+   height: 200px;
+   background-color:#7d12ff;
+   margin: 100px;
+   position: absolute;
+   left: 650px;
+   top: 700px;
+   transition: all 0.5s;
+}  
+#bar13{
+   width: 20px; 
+   height: 200px;
+   background-color:#200589;
+   margin: 100px;
+   position: absolute;
+   left: 700px;
+   top: 700px;
+   transition: all 0.5s;
+}  
+#bar14{
+   width: 20px; 
+   height: 200px;
+   background-color:#7d12ff;
+   margin: 100px;
+   position: absolute;
+   left: 750px;
+   top: 700px;
+   transition: all 0.5s;
+}  
+#bar15{
+   width: 20px; 
+   height: 200px;
+   background-color:#200589;
+   margin: 100px;
+   position: absolute;
+   left: 800px;
+   top: 700px;
+   transition: all 0.5s;
+}  #bar16{
+   width: 20px; 
+   height: 200px;
+   background-color:#7d12ff;
+   margin: 100px;
+   position: absolute;
+   left: 850px;
+   top: 700px;
+   transition: all 0.5s;
+}  #bar17{
+   width: 20px; 
+   height: 200px;
+   background-color:#200589;
+   margin: 100px;
+   position: absolute;
+   left: 900px;
+   top: 700px;
+   transition: all 0.5s;
+} #bar18{
+   width: 20px; 
+   height: 200px;
+   background-color:#7d12ff;
+   margin: 100px;
+   position: absolute;
+   left: 950px;
+   top: 700px;
+   transition: all 0.5s;
+} #bar19{
+   width: 20px; 
+   height: 200px;
+   background-color:#200589;
+   margin: 100px;
+   position: absolute;
+   left: 1000px;
+   top: 700px;
+   transition: all 0.5s;
+}  #bar20{
+   width: 20px; 
+   height: 200px;
+   background-color:#7d12ff;
+   margin: 100px;
+   position: absolute;
+   left: 1050px;
+   top: 700px;
+   transition: all 0.5s;
+}  #bar21{
+   width: 20px; 
+   height: 200px;
+   background-color:#200589;
+   margin: 100px;
+   position: absolute;
+   left: 1100px;
+   top: 700px;
+   transition: all 0.5s;
+} #bar22{
+   width: 20px; 
+   height: 200px;
+   background-color:#7d12ff;
+   margin: 100px;
+   position: absolute;
+   left: 1150px;
+   top: 700px;
+   transition: all 0.5s;
+}  #bar23{
+   width: 20px; 
+   height: 200px;
+   background-color:#200589;
+   margin: 100px;
+   position: absolute;
+   left: 1200px;
+   top: 700px;
+   transition: all 0.5s;
+} #bar24{
+   width: 20px; 
+   height: 200px;
+   background-color:#7d12ff;
+   margin: 100px;
+   position: absolute;
+   left: 1250px;
+   top: 700px;
+   transition: all 0.5s;
+}
+
+
+
+/* @keyframes my-animation {     
+   from {
+      top: -510px;
+     left : -100px;
+   }
+   to {
+      top: -500px;
+     left : 0;
+   }      
+ }
+ 
+ .run-animation {
+   position: relative;
+   animation: my-animation 0.5s ease;
+ }
+  */
+ #words {
+    color: #7d12ff;
+   position: relative;
+   top:-500px;
+   text-align: center;
+   font-family : Palatino Linotype, Book Antiqua, Palatino, serif;
+ }
